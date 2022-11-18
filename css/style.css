@@ -1,0 +1,522 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("../images/banner.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(34, 34, 41, 0.004);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.block {
+    min-height: 100vh;
+}
+
+.navbar-brand img {
+    margin-bottom: 7px;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(255, 254, 254);
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(0, 142, 214);
+    width: 0%;
+    height: 2px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover::before {
+    width: 48%;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(0, 142, 214);
+    width: 0%;
+    height: 2px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover::after {
+    width: 48%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 5px 0px;
+    margin: 0px 15px 10px 0px;
+}
+
+.text h5 {
+    text-transform: uppercase;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(0, 142, 214);
+}
+
+.text h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 54px;
+    color: rgb(255, 255, 255);
+    margin: 30px auto;
+}
+
+.text p {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 50px;
+}
+
+.btn-x {
+    text-transform: uppercase;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(255, 254, 254);
+    padding: 10px 25px;
+    background: rgb(21, 164, 250);
+    border: 2px solid rgb(21, 164, 250);
+    cursor: pointer;
+}
+
+.btn-x:hover {
+    color: rgb(255, 255, 255);
+}
+
+.btn-y {
+    text-transform: uppercase;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(255, 254, 254);
+    padding: 10px 25px;
+    border: 2px solid rgb(153, 153, 153);
+    cursor: pointer;
+}
+
+.btn-y:hover {
+    color: rgb(255, 255, 255);
+}
+
+.phone img {
+    position: absolute;
+    right: 90px;
+    bottom: 0px;
+}
+
+.block-1 h5 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+.block-1 h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    position: relative;
+    margin: 24px 0px 48px;
+}
+
+.block-1 h1::before {
+    content: "";
+    position: absolute;
+    right: 512px;
+    bottom: -35px;
+    background: rgb(0, 142, 214);
+    width: 4%;
+    height: 2px;
+}
+
+.block-1 h1::after {
+    content: "";
+    position: absolute;
+    left: 512px;
+    bottom: -35px;
+    background: rgb(0, 142, 214);
+    width: 4%;
+    height: 2px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon a {
+    color: rgb(0, 142, 214);
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prdt h3 {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    color: rgb(26, 26, 26);
+    margin: 20px 0px 10px;
+}
+
+.prdt p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+}
+
+.block-2 h5 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+.block-2 h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    position: relative;
+    margin: 24px 0px 48px;
+}
+
+.block-2 h1::before {
+    content: "";
+    position: absolute;
+    right: 520px;
+    bottom: -35px;
+    background: rgb(0, 142, 214);
+    width: 4%;
+    height: 2px;
+}
+
+.block-2 h1::after {
+    content: "";
+    position: absolute;
+    left: 28px;
+    bottom: -35px;
+    background: rgb(0, 142, 214);
+    width: 4%;
+    height: 2px;
+}
+
+.block-2 p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 21px;
+    color: rgb(153, 153, 153);
+    padding-top: 25px;
+}
+
+.icon-1 {
+    padding-bottom: 13px;
+    text-align: center;
+}
+
+.text-x h6 {
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about {
+    background: rgb(242, 242, 242);
+}
+
+.testimonial {
+    min-height: 100vh;
+    background-image: url("../images/banner_c.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+.testimonial::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(34, 34, 41, 0.004);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.block-3 {
+    min-height: 100vh;
+}
+
+.block-3 h5 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+.block-3 h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 24px 0px 48px;
+}
+
+.block-3 h1::before {
+    content: "";
+    position: absolute;
+    right: 512px;
+    bottom: -35px;
+    background: rgb(0, 142, 214);
+    width: 4%;
+    height: 2px;
+}
+
+.block-3 h1::after {
+    content: "";
+    position: absolute;
+    left: 512px;
+    bottom: -35px;
+    background: rgb(0, 142, 214);
+    width: 4%;
+    height: 2px;
+}
+
+.text_1 p {
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.text-y h6 {
+    padding-bottom: 7px;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    background: rgb(0, 0, 0);
+}
+
+.text_2 p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.plan {
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.plan:hover {
+    color: rgb(0, 142, 214);
+}
+
+.plan-1 {
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.plan-1:hover {
+    background: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+}
+
+.plan-1 h1 {
+    font-size: 48px;
+}
+
+.plan-1 p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+}
+
+.plan-1 p:hover {
+    background: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+}
+
+.plan-2 {
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.plan-2 p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+}
+
+.plan-2 a {
+    text-decoration: none;
+}
+
+.btn-1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(0, 142, 214);
+    margin-top: 20px;
+    padding: 7px 20px;
+    background: transparent;
+    border: 2px solid rgb(153, 153, 153);
+}
+
+.btn-1:hover {
+    background: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 142, 214);
+}
+
+.contact {
+    background: rgb(237, 237, 237);
+    padding-bottom: 300px;
+    position: relative;
+}
+
+.icon-2 a {
+    font-size: 40px;
+}
+
+.icon-2 p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(153, 153, 153);
+    margin-top: 10px;
+}
+
+form {
+    width: 50%;
+    background: rgb(21, 20, 26);
+    position: absolute;
+    left: 25%;
+    bottom: -50px;
+}
+
+.form-x input {
+    width: 90%;
+    padding: 5px 15px;
+    margin-bottom: 24px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 3px;
+    background: transparent;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.form-y textarea {
+    width: 90%;
+    padding: 5px 20px;
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.btn-2 {
+    background: rgb(0, 142, 214);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-left: 152px;
+}
+
+footer {
+    background: rgb(21, 20, 26);
+}
+
+.footer_icon ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_icon ul li {
+    list-style: none;
+}
+
+.footer_icon ul li a {
+    font-size: 20px;
+    color: #999;
+}
+
+.footer_icon p {
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 19px;
+    color: rgb(153, 153, 153);
+    margin-top: 20px;
+}
+
+.footer_icon a:hover {
+    color: #008ed6;
+}
